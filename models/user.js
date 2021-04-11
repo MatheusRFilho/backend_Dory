@@ -54,10 +54,6 @@ class User {
             }
         })
     }
-
-    emailAlreadyExist(email) {
-        
-    }
 }
 
 module.exports = new User
