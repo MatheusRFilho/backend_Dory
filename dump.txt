@@ -1,0 +1,35 @@
+
+
+CREATE TABLE `min_mais_informacoes` (
+  `min_codigo` int(11) NOT NULL,
+  `min_cabelo` longtext DEFAULT NULL,
+  `min_olhos` longtext DEFAULT NULL,
+  `min_altura` decimal(18,2) NOT NULL,
+  `min_peso` decimal(18,2) NOT NULL,
+  `min_descricao` longtext DEFAULT NULL,
+  `min_tipo_sanguineo` longtext DEFAULT NULL,
+  `min_deficiencia_mental` longtext DEFAULT NULL,
+  `min_deficiencia_fisica` longtext DEFAULT NULL,
+  `min_restricao_alimentar` longtext DEFAULT NULL,
+  `min_restricao_medicamentos` longtext DEFAULT NULL,
+  `min_doencas` longtext DEFAULT NULL,
+  `des_codigo` int(11) NOT NULL,
+  `vul_codigo` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `tut_tutorias` (
+  `tut_codigo` int(11) NOT NULL,
+  `res_codigo` int(11) NOT NULL,
+  `pes_codigo` int(11) NOT NULL,
+  `tut_data_cadastro` datetime NOT NULL,
+  `tut_ativo` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `vul_vulneravel` (
+  `vul_codigo` int(11) NOT NULL,
+  `vul_observacoes` varchar(50) CHARACTER SET utf8 NOT NULL,
+  `vul_status` tinyint(1) NOT NULL,
+  `pes_codigo` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
